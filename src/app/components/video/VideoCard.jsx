@@ -4,7 +4,7 @@ import React from "react";
 
 const VideoCard = () => {
   return (
-    <div className=" border border-b flex items-center justify-center">
+    <div className=" border border-b flex items-center justify-center mt-12">
         <video
           src="https://resource.heygencdn.com/homepage/header_video_josh2.mp4"
           autoPlay

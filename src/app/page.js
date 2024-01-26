@@ -1,3 +1,5 @@
+import HeroBG from "./components/bg/HeroBG";
+import GridHero from "./components/gridHero/GridHero";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import VideoCard from "./components/video/VideoCard";
@@ -8,6 +10,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-[#e6e0f4]">
       <Navbar/>
       <Hero/>
+      {/* <HeroBG/> */}
+      <GridHero/>
     </main>
   );
 }
