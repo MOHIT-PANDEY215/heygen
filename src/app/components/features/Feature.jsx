@@ -6,7 +6,8 @@ import { IoPlayOutline } from "react-icons/io5";
 
 const Feature = () => {
   return (
-    <div className={`${style.section} px-12`}>
+    <div className={`${style.section} px-12 flex item-center `}>
+        <div className='lg:w-[80%] lg:mx-auto'>
         <div className=' p-8 py-12 my-12'>
             <div className=''>
                 <div className='mb-8 text-white'>
@@ -30,6 +31,7 @@ const Feature = () => {
                 </div>
             
             </div>
+        </div>
         </div>
     </div>
   )
