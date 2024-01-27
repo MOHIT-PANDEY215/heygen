@@ -72,7 +72,7 @@ function FooterContent(){
                     
                 </div>
                 <div>
-                <div className='text-[#7559ff] mb-4 font-semibold'>Resources</div>
+                <div className='text-[#7559ff] mb-4 font-semibold'>Company</div>
                 <div className='text-[#0c062c] text-[14px]'>
                 <p>About Us </p>
                 <p>Careers </p>

@@ -2,6 +2,7 @@ import React from 'react'
 import style from './Feature.module.css'
 import { Button } from '@/components/ui/button'
 import { IoPlayOutline } from "react-icons/io5";
+import Image from 'next/image';
 
 
 const Feature = () => {
@@ -19,15 +20,15 @@ const Feature = () => {
             <div className='flex flex-col items-center gap-8 '>
                 <div className={`${style.featureWrapper1}`}>
                     <VideoCard/>
-                    <VideoCard/>
+                    <VideoCard2/>
                 </div>
                 <div className={`${style.featureWrapper2}`}>
-                    <VideoCard/>
-                    <VideoCard/>
+                    <VideoCard3/>
+                    <VideoCard4/>
                 </div>
                 <div className={`${style.featureWrapper3}`}>
-                    <VideoCard/>
-                    <VideoCard/>
+                    <VideoCard2/>
+                    <VideoCard3/>
                 </div>
             
             </div>
@@ -37,9 +38,9 @@ const Feature = () => {
   )
 }
 
-function VideoCard({src,title,para}){
+function VideoCard(){
     return(
-        <div className='gap-4 flex flex-col relative border-2 rounded-[16px] w-full'>
+        <div className='gap-4 flex flex-col relative rounded-[16px] w-full'>
             <div className="button absolute z-[3] ml-3 mt-3">
                 <button className='rounded-[16px] p-4 text-white bg-[#1a1917] flex gap-1 items-center'>
                     <IoPlayOutline/>
@@ -61,4 +62,73 @@ function VideoCard({src,title,para}){
     )
 }
 
+function VideoCard2(){
+    return(
+        <div className='gap-4 flex flex-col justify-between bg-gradient-to-b from-[#f1eeff] to-[#bbadff] rounded-[16px] w-full'>
+            <div className="leading-none z-[3] p-4 flex flex-col gap-3 text-[#0c062c]">
+                <h2 className='text-[16px] sm:text-[24px] font-semibold'>API</h2>
+                <p className='text-[#0c062c] text-[14px] sm:text-[16px]'>Integrate HeyGen&apos;s powerful AI capabilities into your product and create amazing avatar videos programmatically with HeyGen's API.</p>
+            </div>
+            
+                <div className='w-full'>
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature.webp" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 94vw, (max-width: 1439px) 46vw, 574px" srcset="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-500.png 500w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-800.png 800w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-1080.png 1080w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature.webp 1142w" width={100} height={100} className='w-full'/>
+                </div>
+            
+            
+        </div>
+    )
+}
+
+function VideoCard3(){
+    return(
+        <div className='gap-4 flex flex-col justify-between bg-[#e3ddf2] rounded-[16px] w-full'>
+            <div className="leading-none z-[3] p-8 flex flex-col gap-3 text-[#0c062c]">
+                <h2 className='text-[16px] sm:text-[24px] font-semibold'>ChatGPT script writer</h2>
+                <p className='text-[#0c062c] text-[14px] sm:text-[16px]'>Accelerate your video creation with our AI writing assistant.</p>
+            </div>
+            
+                <div className='w-full px-4'>
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564332ddcbd1d3b7f4c98bd_feature_script_img.svg" alt=""  width={100} height={100} className='w-full rounded-t-[16px]' objectFit='cover'/>
+                </div>
+            
+            
+        </div>
+    )
+}
+
+function VideoCard4(){
+    return(
+        <div className='gap-4 flex flex-col justify-between bg-[#341da6] rounded-[16px] w-full'>
+            <div className="leading-none z-[3] p-8 flex flex-col gap-3 text-white">
+                <h2 className='text-[16px] sm:text-[24px] font-semibold'>AI Outfits</h2>
+                <p className='text-[14px] sm:text-[16px]'>Elevate your avatar for any occasion with a wide range of customizable clothing options.</p>
+            </div>
+            
+                <div className='w-full px-4'>
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4.webp" alt="" sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 29vw, 370px" srcset="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4-p-500.webp 500w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4.webp 738w"  width={100} height={100} className='w-full rounded-t-[16px]' objectFit='cover'/>
+                </div>
+            
+            
+        </div>
+    )
+}
+
+function VideoCard5(){
+    return(
+        <div className='gap-32 flex flex-col justify-between bg-[#e6e0f4] rounded-[16px] w-full'>
+            <div className="leading-none z-[3] p-8 flex flex-col gap-3 text-[#0c062c]">
+                <h2 className='text-[16px] sm:text-[24px] font-semibold'>Integrations</h2>
+                <p className='text-[14px] sm:text-[16px]'>Using HeyGen couldn’t be easier, streamline your video creation process from your favorite platform.</p>
+            </div>
+            
+                <div className='px-4 grid grid-cols-3'>
+                    <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656437be31f6f4a6fe2e16a6_zapier.webp" alt=""  width={100} height={100} className=' rounded-[24px] '/>
+                    <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656437c09837db5b566a7bae_canva.webp" alt=""  width={100} height={100} className=' rounded-[24px] '/>
+                    <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656437bdf32c4fcae5438b29_chatgpt.webp" alt=""  width={100} height={100} className=' rounded-[24px] '/>
+                </div>
+            
+            
+        </div>
+    )
+}
 export default Feature
