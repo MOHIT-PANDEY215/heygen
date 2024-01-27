@@ -7,7 +7,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import NavButton from "../button/navButton";
+import NavButton from "../button/NavButton";
+
 
 const navItems = [
   {
