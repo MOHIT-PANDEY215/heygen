@@ -15,7 +15,7 @@ const VideoCard = () => {
         ></video>
 
 <div 
-  className="absolute top-[-8rem] left-3 md:left-8 bg-[#e9e4f5] min-h-[50%] leading-tight md:p-4 rounded-[16px]" 
+  className="absolute top-[-8rem] left-3 md:left-12 bg-[#e9e4f5] min-h-[50%] leading-tight md:p-4 rounded-[16px]" 
   style={{backdropFilter: "blur(30px)", boxShadow: "0 60px 120px rgba(11,0,70,.7)" }}
 >
   <TypeEffect/> 

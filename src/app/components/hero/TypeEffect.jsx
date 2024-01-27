@@ -3,9 +3,9 @@ import Typewriter from 'typewriter-effect'
 
 const TypeEffect = () => {
   return (
-    <div className='w-[200px] p-4' >
+    <div className='w-[200px] lg:w-[300px] p-4' >
         <h2 className='text-[#7559ff]'>Script</h2>
-        <h2>
+        <h2 className='text-[14px] md:text-[20px]'>
             <Typewriter
                 options={{
                     strings: ['Hey there! Welcome to HeyGen - where you can easily create fun, high-quality videos using our AI avatars and voices. In just a few clicks, you can generate custom videos for social media, presentations, education and more'],
