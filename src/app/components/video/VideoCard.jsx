@@ -4,13 +4,13 @@ import React from "react";
 
 const VideoCard = () => {
   return (
-    <div className=" border border-b flex items-center justify-center mt-12">
+    <div className="my-6 border border-b flex items-center justify-center">
         <video
           src="https://resource.heygencdn.com/homepage/header_video_josh2.mp4"
           autoPlay
           loop
           muted
-          className="rounded-[25px] w-[80%]"
+          className="rounded-[25px] w-[80%] lg:w-[60%]"
         ></video>
     </div>
   );

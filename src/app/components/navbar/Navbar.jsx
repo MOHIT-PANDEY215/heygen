@@ -9,7 +9,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import NavButton from "../button/navButton";
 
-
 const navItems = [
   {
     label: "Use Cases",
@@ -18,24 +17,20 @@ const navItems = [
       {
         label: "Sales Outreach",
         link: "#",
-        
       },
       {
         label: "Product Marketing",
         link: "#",
-        
       },
       {
         label: "Content Marketing",
         link: "#",
-        
       },
       {
         label: "Learning & Development",
         link: "#",
-        
-      }
-    ]
+      },
+    ],
   },
   {
     label: "Features",
@@ -43,49 +38,49 @@ const navItems = [
     children: [
       {
         label: "Instant Avatar",
-        link: "#"
+        link: "#",
       },
       {
         label: "Studio Avatar",
-        link: "#"
+        link: "#",
       },
       {
         label: "Video Translate",
-        link: "#"
+        link: "#",
       },
       {
         label: "Voice Cloning",
-        link: "#"
+        link: "#",
       },
       {
         label: "Photo Avatar",
-        link: "#"
+        link: "#",
       },
       {
         label: "AI Voices",
-        link: "#"
+        link: "#",
       },
       {
         label: "Personalised Video",
-        link: "#"
+        link: "#",
       },
       {
         label: "Streaming Avatar",
-        link: "#"
+        link: "#",
       },
       {
         label: "AI Avatars",
-        link: "#"
+        link: "#",
       },
       {
         label: "Templates",
-        link: "#"
+        link: "#",
       },
       {
         label: "Zapier",
-        link: "#"
-      }
-    ]
+        link: "#",
+      },
+    ],
   },
   {
     label: "Resources",
@@ -94,29 +89,25 @@ const navItems = [
       {
         label: "Blog",
         link: "#",
-        
       },
       {
         label: "Weekly Webinar",
         link: "#",
-        
       },
       {
         label: "Case Studies",
         link: "#",
-        
       },
       {
         label: "Help Center",
         link: "#",
-        
-      }
-    ]
+      },
+    ],
   },
   {
     label: "Pricing",
-    link: "#"
-  }
+    link: "#",
+  },
 ];
 
 export default function Navbar() {
@@ -124,27 +115,35 @@ export default function Navbar() {
   const [isSideMenuOpen, setSideMenue] = useState(false);
   function openSideMenu() {
     setSideMenue(true);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   }
   function closeSideMenu() {
     setSideMenue(false);
-    document.body.style.overflow = '';
+    document.body.style.overflow = "";
   }
 
   return (
     <div className="mx-auto flex  w-full max-w-7xl justify-between px-4 py-4 text-sm">
       {/* left side  */}
       {/* logo */}
-      <Image src={`https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/649e4c3d5f0708ca6cd80bba_logoHorizonalLight.svg`} alt=" logo" width={100} height={100} className="cursor-pointer"/>
+      <Image
+        src={`https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/649e4c3d5f0708ca6cd80bba_logoHorizonalLight.svg`}
+        alt=" logo"
+        width={100}
+        height={100}
+        className="cursor-pointer"
+      />
       {/* middle side  */}
-      <section ref={animationParent} className="flex items-center justify-between">
-        
+      <section
+        ref={animationParent}
+        className="flex items-center justify-between"
+      >
         {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
-        <div className="hidden lg:flex items-center gap-4 transition-all">
+        <div className="hidden lg:flex  items-center gap-4 transition-all">
           {navItems.map((d, i) => (
-            <Link
+            <div
               key={i}
-              href={d.link ?? "#"}
+              
               className="relative group  px-2 py-3 transition-all  font-semibold "
             >
               <p className="flex cursor-pointer items-center gap-2 text-black group-hover:text-[#7559ff] group-hover:bg-[#0c062c0d] rounded-full p-2">
@@ -171,7 +170,7 @@ export default function Navbar() {
                   ))}
                 </div>
               )}
-            </Link>
+            </div>
           ))}
         </div>
         {/* navitems */}
@@ -182,14 +181,14 @@ export default function Navbar() {
         <button className="h-fit font-semibold text-black transition-all hover:text-[#7559ff]">
           Contact Sales
         </button>
-        <NavButton text="Get Started"/>
+        <NavButton text="Get Started" />
       </section>
       <div className="flex gap-2 items-center lg:hidden">
-      <NavButton text="Get Started"/>
-      <FiMenu
-        onClick={openSideMenu}
-        className="cursor-pointer text-4xl bg-[#7559ff1a] rounded lg:hidden"
-      />
+        <NavButton text="Get Started" />
+        <FiMenu
+          onClick={openSideMenu}
+          className="cursor-pointer text-4xl bg-[#7559ff1a] rounded lg:hidden"
+        />
       </div>
     </div>
   );
@@ -200,25 +199,27 @@ function MobileNav({ closeSideMenu }) {
     <div className="fixed left-0 top-0 flex h-full min-h-screen w-screen justify-end bg-black/60 lg:hidden">
       <div className=" w-full h-full bg-white px-4 py-4">
         <div className="flex justify-between">
-        <Image src={`https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/649e4c3d5f0708ca6cd80bba_logoHorizonalLight.svg`} alt=" logo" width={100} height={100} className="cursor-pointer"/>
-        <div className="flex items-center">
-          <NavButton text="Get Started"/>
-        <section className="flex justify-end">
-          <AiOutlineClose
-            onClick={closeSideMenu}
-            className="cursor-pointer text-4xl "
+          <Image
+            src={`https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/649e4c3d5f0708ca6cd80bba_logoHorizonalLight.svg`}
+            alt=" logo"
+            width={100}
+            height={100}
+            className="cursor-pointer"
           />
-        </section>
+          <div className="flex items-center">
+            <NavButton text="Get Started" />
+            <section className="flex justify-end">
+              <AiOutlineClose
+                onClick={closeSideMenu}
+                className="cursor-pointer text-4xl "
+              />
+            </section>
+          </div>
         </div>
-        </div>
-        
+
         <div className=" flex flex-col text-base  gap-2 transition-all">
           {navItems.map((d, i) => (
-            <SingleNavItem
-              key={i}
-              label={d.label}
-              link={d.link}
-            >
+            <SingleNavItem key={i} label={d.label} link={d.link}>
               {d.children}
             </SingleNavItem>
           ))}
@@ -237,10 +238,9 @@ function SingleNavItem(d) {
   }
 
   return (
-    <Link
+    <div
       ref={animationParent}
       onClick={toggleItem}
-      href={d.link ?? "#"}
       className="relative   px-2 py-3 transition-all "
     >
       <p className="flex cursor-pointer items-center gap-2 font-semibold text-black hover:text-[#7559ff] ">
@@ -248,7 +248,9 @@ function SingleNavItem(d) {
         {d.children && (
           // rotate-180
           <IoIosArrowDown
-            className={`text-xs text-[#7559ff] transition-all  ${isItemOpen && " rotate-180"}`}
+            className={`text-xs text-[#7559ff] transition-all  ${
+              isItemOpen && " rotate-180"
+            }`}
           />
         )}
       </p>
@@ -268,6 +270,6 @@ function SingleNavItem(d) {
           ))}
         </div>
       )}
-    </Link>
+    </div>
   );
 }
