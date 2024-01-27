@@ -41,7 +41,7 @@ function GridCard({src,text,spanText,para}){
             <PlayButton className="md:hidden absolute top-0" icon={<IoPlayOutline />} blur/>
             </span>
             <div className='relative p-2 md:p-4 pb-8'>
-                <div className='relative z-[1] flex'>
+                <div className='relative z-[1] flex justify-between'>
                     <div>
                         <h2 className='text-[16px] md:text-[20px]'>
                             {text}
@@ -50,7 +50,7 @@ function GridCard({src,text,spanText,para}){
                         </h2>
                         <p className='text-[#bcc1cc] text-[14px]'>{para}</p>
                     </div>
-                    <div className='hidden lg:flex items-end '>
+                    <div className='hidden lg:flex items-end gap-2'>
                     <NavButton className="px-4" text="Get Started" icon={<FaArrowRight />} />
                     <PlayButton icon={<IoPlayOutline />}/>
                     </div>

@@ -16,7 +16,7 @@ const Main = () => {
       </div>
       <div className='px-4 lg:max-w-[77rem] lg:mx-auto flex flex-col-reverse lg:flex-row justify-around  gap-4'>
       <NavButton className="px-4 w-full" text="Get Started for free" icon={<FaArrowRight />} />
-      <p className='text-[#0c062c] xl:w-[60%]  w-full lg:text-[24px] text-balance'>Whether you're a professional or beginner, you can create stunning videos in minutes instead of hours.</p>
+      <p className='text-[#0c062c] xl:w-[60%]  w-full lg:text-[24px] text-balance'>Whether you&apos;re a professional or beginner, you can create stunning videos in minutes instead of hours.</p>
       </div>
       <CardSection/>
     </div>

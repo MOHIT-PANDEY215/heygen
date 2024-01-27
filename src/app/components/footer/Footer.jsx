@@ -2,15 +2,12 @@ import React from 'react'
 import { FaDiscord, FaFacebook, FaLinkedin, FaTiktok, FaYoutube,FaArrowRight } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import NavButton from '../button/NavButton';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
     <div className='flex flex-col gap-4  p-12 bg-[#5c46c8]'>
       
-
-
-
-
         <FooterContent/>
         <FooterSignature/>
     </div>
@@ -106,8 +103,8 @@ function FooterSignature(){
                 </div>
             </div>
             <div className='flex gap-8'>
-                <img src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65647d34db6c7206296b9b5a_cai.svg" alt="" />
-                <img src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65647d339c017f844ae8fe20_c2pa.svg" alt="" />
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65647d34db6c7206296b9b5a_cai.svg" alt="" width={60} height={20} className='max-w-full'/>
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65647d339c017f844ae8fe20_c2pa.svg" alt="" width={30} height={10} className='max-w-full'/>
             </div>
         </div>
 

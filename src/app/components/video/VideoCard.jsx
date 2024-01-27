@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-// import Typewriter from "typewriter-effect";
+
 
 const VideoCard = () => {
   return (
@@ -18,7 +18,7 @@ const VideoCard = () => {
 
 function SingleImage({ src }) {
   return (
-    <Image src={src} width={100} height={100} className="rounded-full" />
+    <Image src={src} width={100} height={100} className="rounded-full" alt="" />
   );
 }
 
