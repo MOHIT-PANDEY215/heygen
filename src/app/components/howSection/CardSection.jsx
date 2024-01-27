@@ -24,7 +24,7 @@ function Card({number,text,para,img}){
             </div>
             </div>
             <div>
-                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65673ea2d58453c68698c44f_img01.webp" alt="" width={100} height={100}/>
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65673ea2d58453c68698c44f_img01.webp" sizes="(max-width: 479px) 236px, (max-width: 991px) 293px, (max-width: 1439px) 23vw, 294.6640625px" srcSet="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65673ea2d58453c68698c44f_img01-p-500.webp 500w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65673ea2d58453c68698c44f_img01.webp 522w" className='w-full' alt="" width={100} height={100}/>
             {/* <img src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/65673ea2d58453c68698c44f_img01.webp" alt="" /> */}
             </div>
         </div>

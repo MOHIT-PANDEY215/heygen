@@ -2,10 +2,11 @@ import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
 import NavButton from '../button/NavButton';
 import CardContainer from './CardContainer';
+import TypeEffect from './TypeEffect';
 
 const VoiceSection = () => {
   return (
-    <div className='mt-8 p-8 px-12 '>
+    <div className='mt-8 p-2 sm:p-8 sm:px-12 '>
       <div className='flex flex-col lg:flex-row gap-8 px-8'>
       <div className='flex flex-col gap-8 items-center lg:items-start lg:justify-evenly'>
         <div className='text-[#0c062c] text-center lg:text-start'>
@@ -20,6 +21,14 @@ const VoiceSection = () => {
             <CardContainer/>
         </div>
       </div>
+      <div className='mt-8'>
+        <div 
+        className="mx-auto w-fit bg-[#e9e4f5] min-h-[60%] leading-tight md:p-4 rounded-[16px]" 
+        style={{backdropFilter: "blur(30px)", boxShadow: "0 108px 205px rgba(11,0,70,.4)" }}
+      >
+        <TypeEffect/> 
+      </div>
+        </div>
     </div>
   )
 }

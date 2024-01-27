@@ -11,7 +11,7 @@ const Feature = () => {
         <div className='lg:w-[80%] lg:mx-auto'>
         <div className=' p-8 py-12 my-12'>
             <div className=''>
-                <div className='mb-8 text-white'>
+                <div className='mb-8 text-[#0c062c]'>
                     <h2 className=' text-[60px] lg:text-[128px]'>Features for scale</h2>
                     <p className='text-[20px] lg:text-[24px]'>A full-featured platform for flawless video creation.</p>
                 </div>
@@ -71,7 +71,7 @@ function VideoCard2(){
             </div>
             
                 <div className='w-full'>
-                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature.webp" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 94vw, (max-width: 1439px) 46vw, 574px" srcset="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-500.png 500w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-800.png 800w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-1080.png 1080w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature.webp 1142w" width={100} height={100} className='w-full'/>
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature.webp" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 94vw, (max-width: 1439px) 46vw, 574px" srcSet="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-500.png 500w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-800.png 800w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature-p-1080.png 1080w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656762e9c1a39be7ceeddf90_feature.webp 1142w" width={100} height={100} className='w-full'/>
                 </div>
             
             
@@ -88,7 +88,7 @@ function VideoCard3(){
             </div>
             
                 <div className='w-full px-4'>
-                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564332ddcbd1d3b7f4c98bd_feature_script_img.svg" alt=""  width={100} height={100} className='w-full rounded-t-[16px]' objectFit='cover'/>
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564332ddcbd1d3b7f4c98bd_feature_script_img.svg" alt=""  width={100} height={100} className='w-full rounded-t-[16px] object-cover' />
                 </div>
             
             
@@ -105,7 +105,7 @@ function VideoCard4(){
             </div>
             
                 <div className='w-full px-4'>
-                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4.webp" alt="" sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 29vw, 370px" srcset="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4-p-500.webp 500w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4.webp 738w"  width={100} height={100} className='w-full rounded-t-[16px]' objectFit='cover'/>
+                <Image src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4.webp" alt="" sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 29vw, 370px" srcSet="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4-p-500.webp 500w, https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6564349a75db541f49c4abee_feature_4.webp 738w"  width={100} height={100} className='w-full object-cover rounded-t-[16px]'/>
                 </div>
             
             
