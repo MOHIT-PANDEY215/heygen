@@ -67,7 +67,7 @@ function VideoCard2(){
         <div className='gap-4 flex flex-col justify-between bg-gradient-to-b from-[#f1eeff] to-[#bbadff] rounded-[16px] w-full'>
             <div className="leading-none z-[3] p-4 flex flex-col gap-3 text-[#0c062c]">
                 <h2 className='text-[16px] sm:text-[24px] font-semibold'>API</h2>
-                <p className='text-[#0c062c] text-[14px] sm:text-[16px]'>Integrate HeyGen&apos;s powerful AI capabilities into your product and create amazing avatar videos programmatically with HeyGen's API.</p>
+                <p className='text-[#0c062c] text-[14px] sm:text-[16px]'>Integrate HeyGen&apos;s powerful AI capabilities into your product and create amazing avatar videos programmatically with HeyGen&apos;s API.</p>
             </div>
             
                 <div className='w-full'>
