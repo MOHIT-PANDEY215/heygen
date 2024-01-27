@@ -4,6 +4,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { IoVideocamOutline } from "react-icons/io5";
 
 import AvatarContainer from './AvatarContainer';
+import DivCarousel from '../infinteCarousel/DivCarousel';
+import Reverse from '../infinteCarousel/Reverse';
 
 const Section = () => {
   return (
@@ -25,6 +27,11 @@ const Section = () => {
                 </button>
             </div>
         </div>
+      </div>
+      <div className='flex flex-col'>
+      <DivCarousel/>
+      <Reverse/>
+
       </div>
       <div className='my-8 overflow-x-hidden'>
         <AvatarContainer/>

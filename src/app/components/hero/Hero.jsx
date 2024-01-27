@@ -3,7 +3,7 @@ import React from "react";
 import NavButton from "../button/NavButton";
 import { FaArrowRight } from "react-icons/fa";
 import VideoCard from "../video/VideoCard";
-import TypeEffect from "./TypeEffect";
+
 
 const Hero = () => {
   return (
@@ -25,7 +25,6 @@ const Hero = () => {
         </div>
       </div>
       <VideoCard/>
-      
 
     </section>
   );
