@@ -16,19 +16,19 @@ const Footer = () => {
 
 function FooterContent(){
     return(
-        <div className='flex flex-col lg:flex-row gap-4'>
-            <div className='relative lg:h-full grow-0 lg:w-[50%]'>
+        <div className='flex flex-col lg:flex-row gap-8' >
+            <div className='relative lg:h-full grow-0 lg:w-[50%] rounded-[16px]' style={{boxShadow:"0 4px 4px rgba(0,0,0,.07), 0 10px 9px rgba(0,0,0,.1), 0 19px 17px rgba(0,0,0,.13), 0 26px 30px rgba(0,0,0,.15), 0 5px 56px rgba(0,0,0,.18), 0 4px 134px rgba(0,0,0,.25)"}}>
                 <div className='p-4 absolute w-full bottom-2'>
                     <NavButton className="px-4 w-full" text="Get Started for free" icon={<FaArrowRight />}/>
-                    </div>
+                </div>
                 <div>
-                <div className=''>
-                    <video src="https://resource.heygencdn.com/website/vera_remove/footer_new2.mp4" muted autoPlay loop className='aspect-video h-full w-auto mr-auto ml-auto object-cover rellative rounded-[16px]'></video>
+                    <div className=''>
+                        <video src="https://resource.heygencdn.com/website/vera_remove/footer_new2.mp4" muted autoPlay loop className='aspect-video h-full w-auto mr-auto ml-auto object-cover rellative rounded-[16px]'></video>
+                    </div>
                 </div>
             </div>
-            </div>
 
-            <div className='bg-[#e6e0f4] rounded-[16px] p-8 flex flex-col grow-[2] md:flex-row md:justify-between gap-8' >
+            <div className='bg-[#e6e0f4] rounded-[16px] p-8 flex flex-col grow-[2] md:flex-row md:justify-between gap-8' style={{boxShadow:"0 4px 4px rgba(0,0,0,.07), 0 10px 9px rgba(0,0,0,.1), 0 19px 17px rgba(0,0,0,.13), 0 34px 30px rgba(0,0,0,.15), 0 64px 56px rgba(0,0,0,.18), 0 150px 134px rgba(0,0,0,.25)"}}>
                 <div>
                     <div className='text-[#7559ff] mb-4 font-semibold'>Use Cases</div>
                     <div className='text-[#0c062c] text-[14px]'>
@@ -92,8 +92,8 @@ function FooterContent(){
 
 function FooterSignature(){
     return(
-        <div className='flex flex-col gap-8 md:flex-row md:justify-between md:items-center '>
-        <div className='flex flex-col gap-12 items-center sm:items-start'>
+        <div className='flex flex-col gap-8 md:flex-row md:justify-between md:items-center ' >
+        <div className='flex flex-col gap-12 items-center sm:items-start' >
             <div className='text-[#c3c3c3] flex flex-col items-center sm:items-start text-[12px]'>
                 <div>
                     ©Copyright 2023 HeyGen

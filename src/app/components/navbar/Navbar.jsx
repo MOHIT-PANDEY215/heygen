@@ -124,7 +124,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="mx-auto flex  w-full max-w-7xl justify-between px-4 py-4 text-sm">
+    <div className="mx-auto flex  w-screen max-w-7xl justify-between px-4 py-4 text-sm fixed top-0 z-10 bg-[#e6e0f4]">
       {/* left side  */}
       {/* logo */}
       <Image
@@ -197,7 +197,7 @@ export default function Navbar() {
 
 function MobileNav({ closeSideMenu }) {
   return (
-    <div className="fixed left-0 top-0 flex h-full min-h-screen w-screen justify-end bg-black/60 lg:hidden">
+    <div className="fixed left-0 top-0 flex h-full min-h-screen w-screen justify-end bg-black/60 lg:hidden ">
       <div className=" w-full h-full bg-white px-4 py-4">
         <div className="flex justify-between">
           <Image

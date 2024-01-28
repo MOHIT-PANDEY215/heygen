@@ -5,6 +5,7 @@ import GridHero from "./components/gridHero/GridHero";
 import Hero from "./components/hero/Hero";
 import Main from "./components/howSection/Main";
 import Navbar from "./components/navbar/Navbar";
+import Review from "./components/review/Review";
 import VoiceSection from "./components/voice/VoiceSection";
 
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Section/>
       <VoiceSection/>
       <Feature/>
+      <Review/>
       <Footer/>
     </main>
   );

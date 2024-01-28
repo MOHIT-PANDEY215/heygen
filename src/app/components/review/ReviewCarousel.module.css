@@ -1,0 +1,38 @@
+  
+  .orb {
+    float: left;
+    transition: all .2s ease-out;
+  }
+  
+
+  
+  .marquee {
+    
+    height: 400px;
+    width: 100vw;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .marqueeInner {
+    display: flex;
+    gap: 1rem;
+    width: 200%;
+    margin: 70px 0;
+    position: absolute;
+    animation: marquee 50s linear infinite;
+  }
+    
+  
+  .marqueeInner>span {
+    display: flex;
+    gap: 1rem;
+    float: left;
+    width: 100%;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }

@@ -8,7 +8,7 @@ import VideoCard from "../video/VideoCard";
 const Hero = () => {
   return (
     <section>
-      <div className="pt-[4rem] w-full ">
+      <div className="pt-[4rem] w-full mt-8">
         <div className="flex flex-col items-center text-center max-w-[740px] mx-auto px-8 gap-2">
           <h1 className="text-[40px] sm:text-[48px] md:text-[64px] lg:text-[72px] font-medium">
             <span className="text-[#7559ff]">AI-powered video </span>
